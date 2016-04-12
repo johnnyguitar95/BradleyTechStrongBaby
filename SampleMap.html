@@ -10,16 +10,16 @@ function initMap() {
     scrollwheel: true,
     zoom: 15
   });
-  
+
   /*var persLatLng = {lat: 43.0385, lng: -87.9296};
-  
+
   var marker = new google.maps.Marker({
 	position: persLatLng,
 	map: map,
 	title: 'Home'})*/
-	
+
   var listOfCoord = [{lat: 43.0385, lng: -87.9296},{lat: 43.0437, lng: -87.9171}, {lat: 43.038239, lng: -87.902258}];
-  
+
   for(var x = 0; x<3; x++){
 	var m = new google.maps.Marker({
 	position: listOfCoord[x],
