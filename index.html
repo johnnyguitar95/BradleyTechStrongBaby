@@ -91,7 +91,7 @@
                                 position: place.geometry.location
                             });
                             google.maps.event.addListener(marker, 'click', function() {
-                                infoWindow.setContent('<div><strong>' + element.name + '</strong><br>' + place.formatted_address + '</div>');
+                                infoWindow.setContent('<div><strong>' + element.name + '</strong><br>' + place.formatted_address + '</div>' + element.link);
                                 infoWindow.open(map, this);
                             });
                         }
@@ -111,43 +111,53 @@
             var listOfLocations = [];
             listOfLocations.push({
                 name: 'Hephatha Lutheran Church',
-                id: 'ChIJPfQcpv0bBYgRwxzvmCULF_E'
+                id: 'ChIJPfQcpv0bBYgRwxzvmCULF_E',
+                link: '<a href="https://www.google.com/maps/dir/Current+Location/Hephatha+Lutheran+Church">Get Directions</a>'
             });
             listOfLocations.push({
                 name: 'Village Ministries Inc.',
-                id: 'ChIJDZKlPu4bBYgRwYjZwDFIIUI'
+                id: 'ChIJDZKlPu4bBYgRwYjZwDFIIUI',
+                link: '<a href="https://www.google.com/maps/dir/Current+Location/New+Nation+Temple">Get Directions</a>'
             });
             listOfLocations.push({
                 name: 'Barton Elementary School',
-                id: 'ChIJB_Xu420dBYgRYXlBWRJ-jpA'
+                id: 'ChIJB_Xu420dBYgRYXlBWRJ-jpA',
+                link: '<a href="https://www.google.com/maps/dir/Current+Location/Barton+Elementary+School">Get Directions</a>'
             });
             listOfLocations.push({
                 name: 'Capuchin Community Services - House of Peace',
-                id: 'ChIJ7xWqldgbBYgRYtWxt_g_M44'
+                id: 'ChIJ7xWqldgbBYgRYtWxt_g_M44',
+                link: '<a href="https://www.google.com/maps/dir/Current+Location/House+of+Peace">Get Directions</a>'
             });
             listOfLocations.push({
                 name: 'Bradford Memorial AME Church',
-                id: 'ChIJZ6ccC-YbBYgR-L5sZMoa6wk'
+                id: 'ChIJZ6ccC-YbBYgR-L5sZMoa6wk',
+                link: '<a href="https://www.google.com/maps/dir/Current+Location/Bradford+Memorial+AME+Church">Get Directions</a>'
             });
             listOfLocations.push({
                 name: 'True Love Missionary Baptist Church',
-                id: 'ChIJSe_jPMoeBYgRDa0QiuAiVnc'
+                id: 'ChIJSe_jPMoeBYgRDa0QiuAiVnc',
+                link: '<a href="https://www.google.com/maps/dir/Current+Location/True+Love+Missionary+Baptist+Church">Get Directions</a>'
             });
             listOfLocations.push({
                 name: 'Ebenezer Church of God in Christ',
-                id: 'EjozMTMyIE4gTS5MLksuIERyaXZlLCBOIE0uTC5LLiBEciwgTWlsd2F1a2VlLCBXSSA1MzIxMiwgVVNB'
+                id: 'EjozMTMyIE4gTS5MLksuIERyaXZlLCBOIE0uTC5LLiBEciwgTWlsd2F1a2VlLCBXSSA1MzIxMiwgVVNB',
+                link: '<a href="https://www.google.com/maps/dir/Current+Location/Victory+Prepatory+Academy">Get Directions</a>'
             });
             listOfLocations.push({
                 name: 'Holy Cathedral Church of God',
-                id: 'ChIJYalokJobBYgRboFn5bJJZzU'
+                id: 'ChIJYalokJobBYgRboFn5bJJZzU',
+                link: '<a href="https://www.google.com/maps/dir/Current+Location/Holy+Cathedral+Church+of+God">Get Directions</a>'
             });
             listOfLocations.push({
                 name: 'Unity Gospel House of Prayer',
-                id: 'ChIJ8RYCI2QZBYgRJHNLkhDNzSU'
+                id: 'ChIJ8RYCI2QZBYgRJHNLkhDNzSU',
+                link: '<a href="https://www.google.com/maps/dir/Current+Location/Unity+Gospel+House+of+Prayer">Get Directions</a>'
             });
             listOfLocations.push({
                 name: 'Canaan Baptist Church',
-                id: 'ChIJZ9oGkVEZBYgRjqsY69sWxco'
+                id: 'ChIJZ9oGkVEZBYgRjqsY69sWxco',
+                link: '<a href="https://www.google.com/maps/dir/Current+Location/Canaan+Baptist+Church">Get Directions</a>'
             });
 
             return listOfLocations;
